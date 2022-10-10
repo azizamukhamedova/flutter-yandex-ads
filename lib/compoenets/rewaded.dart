@@ -1,0 +1,5 @@
+class YandexAdsRewarded {
+  void load() {
+
+  }
+}

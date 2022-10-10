@@ -1,0 +1,185 @@
+PODS:
+  - AdMobYandexMobileAdsAdapters (9.9.0.0):
+    - AdMobYandexMobileAdsAdapters/Static (= 9.9.0.0)
+    - Google-Mobile-Ads-SDK (~> 9.9.0)
+  - AdMobYandexMobileAdsAdapters/Static (9.9.0.0):
+    - Google-Mobile-Ads-SDK (~> 9.9.0)
+    - YandexMobileAds (~> 5.2.0)
+  - AppLovinSDK (11.4.4)
+  - AppLovinYandexMobileAdsAdapters (11.4.3.0):
+    - AppLovinSDK (~> 11.4.3)
+    - AppLovinYandexMobileAdsAdapters/Static (= 11.4.3.0)
+  - AppLovinYandexMobileAdsAdapters/Static (11.4.3.0):
+    - AppLovinSDK (~> 11.4.3)
+    - YandexMobileAds (~> 5.2.0)
+  - Flutter (1.0.0)
+  - flutter_yandex_ads (0.0.2):
+    - Flutter
+    - YandexMobileAds
+    - YandexMobileAdsInstream
+    - YandexMobileAdsMediation
+  - Google-Mobile-Ads-SDK (9.9.0):
+    - GoogleAppMeasurement (< 10.0, >= 7.0)
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleAppMeasurement (9.6.0):
+    - GoogleAppMeasurement/AdIdSupport (= 9.6.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (9.6.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 9.6.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (9.6.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleUserMessagingPlatform (2.0.1)
+  - GoogleUtilities/AppDelegateSwizzler (7.8.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.8.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.8.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.8.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.8.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.8.0)"
+  - GoogleUtilities/Reachability (7.8.0):
+    - GoogleUtilities/Logger
+  - IronSourceSDK (7.2.5.0)
+  - IronSourceYandexMobileAdsAdapters (7.2.4.0):
+    - IronSourceSDK (~> 7.2.4)
+    - IronSourceYandexMobileAdsAdapters/Static (= 7.2.4.0)
+  - IronSourceYandexMobileAdsAdapters/Static (7.2.4.0):
+    - IronSourceSDK (~> 7.2.4)
+    - YandexMobileAds (~> 5.2.0)
+  - myTargetSDK (5.15.2):
+    - myTrackerSDK (~> 3.0.3)
+  - MyTargetYandexMobileAdsAdapters (5.15.2.1):
+    - myTargetSDK (~> 5.15.2)
+    - MyTargetYandexMobileAdsAdapters/Static (= 5.15.2.1)
+  - MyTargetYandexMobileAdsAdapters/Static (5.15.2.1):
+    - myTargetSDK (~> 5.15.2)
+    - YandexMobileAds (~> 5.2.0)
+  - myTrackerSDK (3.0.7)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - PromisesObjC (2.1.1)
+  - StartAppSDK (4.7.3)
+  - StartAppYandexMobileAdsAdapters (4.7.3.0):
+    - StartAppSDK (~> 4.7.3)
+    - StartAppYandexMobileAdsAdapters/Static (= 4.7.3.0)
+  - StartAppYandexMobileAdsAdapters/Static (4.7.3.0):
+    - StartAppSDK (~> 4.7.3)
+    - YandexMobileAds (~> 5.2.0)
+  - UnityAds (4.3.0)
+  - UnityAdsYandexMobileAdsAdapters (4.3.0.0):
+    - UnityAds (~> 4.3.0)
+    - UnityAdsYandexMobileAdsAdapters/Static (= 4.3.0.0)
+  - UnityAdsYandexMobileAdsAdapters/Static (4.3.0.0):
+    - UnityAds (~> 4.3.0)
+    - YandexMobileAds (~> 5.2.0)
+  - YandexMobileAds (5.2.1):
+    - YandexMobileAds/Static (= 5.2.1)
+  - YandexMobileAds/Static (5.2.1):
+    - YandexMobileMetrica (< 5.0.0, >= 4.0.0)
+  - YandexMobileAdsInstream (0.12.0):
+    - YandexMobileAds (~> 5.2.0)
+  - YandexMobileAdsMediation (5.2.1):
+    - AdMobYandexMobileAdsAdapters
+    - AppLovinYandexMobileAdsAdapters
+    - IronSourceYandexMobileAdsAdapters
+    - MyTargetYandexMobileAdsAdapters
+    - StartAppYandexMobileAdsAdapters
+    - UnityAdsYandexMobileAdsAdapters
+    - YandexMobileAds (= 5.2.1)
+    - YandexMobileAdsInstream
+  - YandexMobileMetrica (4.4.0):
+    - YandexMobileMetrica/Static (= 4.4.0)
+  - YandexMobileMetrica/Static (4.4.0):
+    - YandexMobileMetrica/Static/Core (= 4.4.0)
+    - YandexMobileMetrica/Static/Crashes (= 4.4.0)
+  - YandexMobileMetrica/Static/Core (4.4.0)
+  - YandexMobileMetrica/Static/Crashes (4.4.0):
+    - YandexMobileMetrica/Static/Core
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_yandex_ads (from `.symlinks/plugins/flutter_yandex_ads/ios`)
+
+SPEC REPOS:
+  trunk:
+    - AdMobYandexMobileAdsAdapters
+    - AppLovinSDK
+    - AppLovinYandexMobileAdsAdapters
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleUserMessagingPlatform
+    - GoogleUtilities
+    - IronSourceSDK
+    - IronSourceYandexMobileAdsAdapters
+    - myTargetSDK
+    - MyTargetYandexMobileAdsAdapters
+    - myTrackerSDK
+    - nanopb
+    - PromisesObjC
+    - StartAppSDK
+    - StartAppYandexMobileAdsAdapters
+    - UnityAds
+    - UnityAdsYandexMobileAdsAdapters
+    - YandexMobileAds
+    - YandexMobileAdsInstream
+    - YandexMobileAdsMediation
+    - YandexMobileMetrica
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_yandex_ads:
+    :path: ".symlinks/plugins/flutter_yandex_ads/ios"
+
+SPEC CHECKSUMS:
+  AdMobYandexMobileAdsAdapters: a390274b001a4ee5b9047a75d69ae86ebf095de3
+  AppLovinSDK: 347d9d039d499acbc3c3f616c669d010b2269334
+  AppLovinYandexMobileAdsAdapters: 184f630c6b3a938214a11a573fc671d70e5e7167
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  flutter_yandex_ads: cd539ac263ca33e33b2c1167fe5933904208dbfb
+  Google-Mobile-Ads-SDK: 8822993da940ab920bad131b5bffce7eb3f62c6a
+  GoogleAppMeasurement: 6de2b1a69e4326eb82ee05d138f6a5cb7311bcb1
+  GoogleUserMessagingPlatform: 5f8b30daf181805317b6b985bb51c1ff3beca054
+  GoogleUtilities: 1d20a6ad97ef46f67bbdec158ce00563a671ebb7
+  IronSourceSDK: 59c9e16fa10f7b27e07df9edfbcf5a4bfc9ccfb3
+  IronSourceYandexMobileAdsAdapters: 556a201b3150e36510b66ca6855b7dc0f72f4b0e
+  myTargetSDK: e79ecceb7ce283f274202ff8e8b64b854ac8edad
+  MyTargetYandexMobileAdsAdapters: 96fb74036d762e4bb4b274eec8b3815a6d0d9409
+  myTrackerSDK: 3b21ddcc191b818d0f39a518413ff98bf6544c76
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
+  StartAppSDK: d67d929f6b5b43b84373f948ed20c272aada5522
+  StartAppYandexMobileAdsAdapters: 3b1e4c511603415bcefdd91421f1cdeb7d866b22
+  UnityAds: 53f7a71da8a16b3eedb57d3930e672687939f643
+  UnityAdsYandexMobileAdsAdapters: 3e70601a0fc07ae732563c685fe2931523aeaed6
+  YandexMobileAds: 3d7708df615f92815a3acedf9869da46d0b4d65e
+  YandexMobileAdsInstream: 9af68b07d930a9d16b343838ebffe6605ef086a2
+  YandexMobileAdsMediation: 5e57537f09fd9353a0108d57b2911770608967f8
+  YandexMobileMetrica: baf7cea47cb87fc9af963c4f747ce8dd7df3d7c0
+
+PODFILE CHECKSUM: 0ae2ea0d52379fd8c6a9b9fd356fb1173f6d9a0d
+
+COCOAPODS: 1.11.2
