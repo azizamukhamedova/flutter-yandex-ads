@@ -28,19 +28,38 @@ class Banner: NSObject, FlutterPlatformView {
     private var api: YandexApi!
     private var id: String = ""
 
-    init(frame: CGRect, viewIdentifier viewId: Int64, arguments args: Any?, api: YandexApi?) {
+    init(frame: CGRect, viewIdentifier viewId: Int64, arguments args: Any?, api api: YandexApi?) {
         super.init()
 
         let params = args as! [String: String]
         let id = params["id"]
+        let adOwnerId = params["ad_owner_id"]
+        let adfPFirst = params["adf_p1"]
+        let adfPSecond = params["adf_p2"]
 
         self.api = api
         self.id = id ?? ""
+        
+        var parameters = [String: String]()
+        parameters["adf_ownerid"] = adOwnerId
+        parameters["adf_p1"] = adfPFirst
+        parameters["adf_p2"] = adfPSecond
+        parameters["adf_pfc"] = ""
+        parameters["adf_pfb"] = ""
+        parameters["adf_pt"] = "b"
+        parameters["adf_pd"] = ""
+        parameters["adf_pw"] = ""
+        parameters["adf_pv"] = ""
+        parameters["adf_prr"] = ""
+        parameters["adf_pdw"] = ""
+        parameters["adf_pdh"] = ""
+        let request = YMAMutableAdRequest()
+        request.parameters = parameters
 
-        banner = YMAAdView(adUnitID: id ?? "", adSize: YMAAdSize.flexibleSize(with: .init(width: 320, height: 100)))
+        banner = YMAAdView(adUnitID: id ?? "", adSize: YMAAdSize.fixedSize(with: .init(width: 300, height: 250)))
         banner.delegate = self
         banner.removeFromSuperview()
-        banner.loadAd()
+        banner.loadAd(with: request)
     }
 
     func view() -> UIView {

@@ -22,8 +22,20 @@ class YandexAdsBanner(private val api: YandexApi) : PlatformViewFactory(Standard
     override fun create(context: Context?, viewId: Int, args: Any?): PlatformView {
         val params = args as Map<String?, Any?>?
         val id: String = params?.get("id") as String
+        val adOwnerId: String = params?.get("ad_owner_id") as String
+        val adfPFirst: String = params?.get("adf_p1") as String
+        val adfPSecond: String = params?.get("adf_p2") as String
+        val adSize: String = params?.get("ad_size") as String
 
-        return Banner(context, id, params, object : BannerAdEventListener {
+        return Banner(
+            context, 
+            id, 
+            adOwnerId,
+            adfPFirst,
+            adfPSecond,
+            adSize,
+            params, 
+            object : BannerAdEventListener {
             override fun onAdLoaded() {
                 val builder = Yandex.EventResponse.Builder()
 
@@ -72,16 +84,38 @@ class YandexAdsBanner(private val api: YandexApi) : PlatformViewFactory(Standard
     }
 }
 
-class Banner(context: Context?, id: String, params: Map<String?, Any?>?, listener: BannerAdEventListener) : PlatformView {
+class Banner(
+    context: Context?, 
+    id: String, 
+    adOwnerId: String,
+    adfPFirst: String,
+    adfPSecond: String, 
+    adSize: String,
+    params: Map<String?, Any?>?, 
+    listener: BannerAdEventListener) : PlatformView {
     private val banner: BannerAdView
 
     init {
         banner = BannerAdView(context!!);
-        banner.setAdSize(AdSize.flexibleSize(320, 100))
-        banner.setAdUnitId(id)
-        banner.setBannerAdEventListener(listener)
+        banner.setAdSize(AdSize.BANNER_300x250);
+        banner.setAdUnitId(id);
+        banner.setBannerAdEventListener(listener);
 
-        val request: AdRequest = AdRequest.Builder().build()
+        val ADFOX_PARAMETERS = mapOf(
+            "adf_ownerid" to adOwnerId,
+            "adf_p1" to adfPFirst,
+            "adf_p2" to adfPSecond,
+            "adf_pt" to "b",
+            "adf_pd" to "",
+            "adf_pw" to "",
+            "adf_pv" to "",
+            "adf_prr" to "",
+            "adf_pdw" to "",
+            "adf_pdh" to "",
+            "adf_puid1" to "",
+            "adf_puid2" to ""
+        )
+        val request: AdRequest = AdRequest.Builder().setParameters(ADFOX_PARAMETERS).build()
         banner.loadAd(request)
     }
 
