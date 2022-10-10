@@ -15,7 +15,11 @@ class YandexAdsBannerWidget extends StatelessWidget {
     Function? onLeftApplication,
     Function? onReturnedToApplication,
     required this.id,
+    required this.adOwnerId,
+    required this.adfPFirst,
+    required this.adfPSecond,
     required this.ads,
+    required this.adSize,
   }) : super(key: key) {
     if (onAdLoaded != null) {
       ads.setOnAdLoaded(id, EventTypes.BANNER, onAdLoaded);
@@ -38,11 +42,16 @@ class YandexAdsBannerWidget extends StatelessWidget {
     }
 
     if (onReturnedToApplication != null) {
-      ads.setOnReturnedToApplication(id, EventTypes.BANNER, onReturnedToApplication);
+      ads.setOnReturnedToApplication(
+          id, EventTypes.BANNER, onReturnedToApplication);
     }
   }
 
   final String id;
+  final String adOwnerId;
+  final String adfPFirst;
+  final String adfPSecond;
+  final String adSize;
   final FlutterYandexAds ads;
 
   Widget build(BuildContext context) {
@@ -50,6 +59,10 @@ class YandexAdsBannerWidget extends StatelessWidget {
 
     final Map<String, dynamic> creationParams = <String, dynamic>{
       'id': id,
+      'ad_owner_id': adOwnerId,
+      'adf_p1': adfPFirst,
+      'adf_p2': adfPSecond,
+      'ad_size': adSize,
     };
 
     switch (defaultTargetPlatform) {
